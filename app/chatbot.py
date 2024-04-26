@@ -14,7 +14,7 @@ class ChatBot:
         self.sentiment = None  # Atributo para manter o sentimento detectado
         
         # Carregando palavras-chave de sentimentos do arquivo JSON
-        with open('templates/sentiment_keywords.json', 'r') as file:
+        with open('static/sentiment_keywords.json', 'r') as file:
             self.sentiment_keywords = json.load(file)
 
         self.responses = {
